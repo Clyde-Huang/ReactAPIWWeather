@@ -1,0 +1,134 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(230, 184, 154, 0.5);
+} */
+
+.spot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(22, 4, 4);
+  z-index: 1;
+}
+
+.clock {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(212, 182, 142, 0.9);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr_dRfiADL6Tgr6bxFhRECSE6U9AbUUaBxGTKpmplPTBlq4buG7DKKOOSPq3N8iYHRAxs&usqp=CAU);
+  background-size: cover;
+  background-position-x: -14px;
+  box-shadow: 0 0 50px yellow;
+
+  margin-top: 20px;
+}
+
+.hour,
+.min,
+.sec {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hr,
+.mn,
+.sc {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+
+.hr {
+  width: 160px;
+  height: 160px;
+}
+
+.mn {
+  width: 190px;
+  height: 190px;
+}
+
+.sc {
+  width: 230px;
+  height: 230px;
+}
+
+.hr:before,
+.mn:before,
+.sc:before {
+  box-shadow: 2px 0.6px 2px rgba(255, 255, 255, 0.1) inset,
+    2px 0.5px 2px rgba(0, 0, 0, 0.2) inset, -3px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hr:before {
+  content: "";
+  width: 18px;
+  height: 60px;
+  background: blue;
+  border-radius: 0.5em;
+  z-index: 10;
+}
+
+.mn:before {
+  content: "";
+  width: 13px;
+  height: 70px;
+  background: rgb(117, 117, 211);
+  border-radius: 0.4em;
+  z-index: 11;
+}
+
+.sc:before {
+  content: "";
+  width: 10px;
+  height: 90px;
+  background: rgb(206, 89, 69);
+  border-radius: 0.3em;
+  z-index: 12;
+}
+
+.twol,
+.three,
+.six,
+.nine {
+  position: absolute;
+  display: flex;
+  z-index: 15;
+  font-size: 2.9em;
+}
+
+.twol {
+  top: 2px;
+}
+
+.three {
+  right: 2px;
+}
+
+.six {
+  bottom: 2px;
+}
+
+.nine {
+  left: 2px;
+}

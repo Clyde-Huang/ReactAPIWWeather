@@ -1,0 +1,142 @@
+/* 基本的背景和容器 */
+.weather-container {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin-top: 50px;
+  font-size: 1.7rem;
+}
+h5 {
+  font-size: 1.15rem;
+}
+h3,
+h5 {
+  color: #333;
+  text-align: center;
+  font-size: em;
+}
+
+/* 區域按鈕 */
+.location-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.location-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.location-button:hover {
+  background-color: #0056b3;
+}
+
+/* 氣候類型按鈕 */
+.weather-type-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+.weather-type-button:hover {
+  background-color: #218838;
+}
+
+/* 顯示天氣描述卡片 */
+.weather-info {
+  margin-top: 30px;
+}
+
+.weather-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.time-range {
+  font-size: 1.3rem;
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.weather-description {
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-radius: 5px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.weather-description p {
+  font-size: 1.01rem;
+  color: rgb(2, 67, 165);
+  text-align: center;
+}
+
+/* 白天模式 */
+.weather-container {
+  background-color: #ffffff;
+  /* color: #333; */
+}
+
+/* 黑暗模式 */
+.weather-container.dark {
+  background-color: #f3e6c4;
+  /* color: #ffffff; */
+}
+
+/* 切換模式按鈕 */
+.dark-mode-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* 確保文字居中 */
+  width: auto; /* 讓按鈕自適應內容寬度 */
+  position: fixed;
+
+  width: 20px;
+  right: 20px;
+  background-color: #ee5933;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #9c2608;
+}
+
+.forclock {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
